@@ -255,8 +255,37 @@ footer{background:var(--ink);color:#9aa3af;padding:54px 0 30px}
 .wa-float:hover{transform:scale(1.07)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
 
+/* SCROLL CUE */
+.scroll-cue{display:flex;flex-direction:column;align-items:center;gap:7px;margin:40px auto 0;width:max-content;color:var(--ink-soft);transition:color .2s}
+.scroll-cue:hover{color:var(--accent)}
+.scroll-cue span{font-size:.7rem;text-transform:uppercase;letter-spacing:.2em;font-weight:600}
+.scroll-cue .chev{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;animation:bob 1.9s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+@media (prefers-reduced-motion:reduce){.scroll-cue .chev{animation:none}}
+
+/* TESTIMONIALS */
+.tmonials{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tmonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:32px 30px;display:flex;flex-direction:column}
+.tcard .quotemark{font-family:'Outfit';font-size:2.6rem;line-height:1;color:var(--accent);opacity:.45;margin-bottom:8px}
+.tcard p{color:var(--ink-soft);font-size:1rem;margin-bottom:20px}
+.tcard .who{margin-top:auto;font-family:'Outfit';font-weight:600;font-size:.98rem;color:var(--ink);display:flex;align-items:center;gap:10px}
+.tcard .who::before{content:"";width:22px;height:2px;background:var(--accent);flex:none}
+.tcard .who span{font-weight:400;font-family:'Inter';color:var(--ink-soft);font-size:.85rem}
+
+/* CONTACT COMPACT (direct options row) */
+.reach-out{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px}
+.ro-card{display:flex;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;transition:border-color .2s,transform .2s}
+.ro-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.ro-card .ico{width:42px;height:42px;border-radius:11px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;flex:none}
+.ro-card .ico svg{width:21px;height:21px;stroke:var(--accent);fill:none;stroke-width:1.8}
+.ro-card .lab{font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);margin-bottom:2px}
+.ro-card .val{font-family:'Outfit';font-weight:600;font-size:.98rem;color:var(--ink);overflow-wrap:anywhere}
+
 /* RESPONSIVE */
 @media (max-width:980px){
+  .tmonial-grid{grid-template-columns:1fr}
+  .reach-out{grid-template-columns:1fr}
   .hero h1{font-size:2.9rem}
   .hero-grid,.phil-grid,.about-grid,.contact-grid,.svc-detail{grid-template-columns:1fr;gap:42px}
   .svc-aside{position:static}

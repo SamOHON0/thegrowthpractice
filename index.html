@@ -76,7 +76,13 @@
   <div class="wrap nav">
     <a href="/" class="brand"><span class="dot"></span>The Growth Practice</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/approach">Approach</a>
+      <div class="has-drop">
+        <a href="/why-coaching">Approach</a>
+        <div class="drop" role="menu">
+          <a href="/why-coaching">Why coaching?<span>What got you here, and future-proofing your career</span></a>
+          <a href="/my-approach">My approach<span>What I help leaders develop, and how I work</span></a>
+        </div>
+      </div>
       <div class="has-drop">
         <a href="/services">Services</a>
         <div class="drop" role="menu">
@@ -94,7 +100,8 @@
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobilemenu" id="mobilemenu">
-    <a href="/approach">Approach</a>
+    <a href="/why-coaching">Why coaching?</a>
+    <a href="/my-approach">My approach</a>
     <a href="/services">Services</a>
     <a href="/services/one-to-one-executive-coaching" class="sub">— One-to-one coaching</a>
     <a href="/services/group-coaching" class="sub">— Group coaching</a>
@@ -113,10 +120,10 @@
     <div class="reveal">
       <p class="eyebrow">Executive &amp; Leadership Coaching</p>
       <h1>Lead with clarity. <br/>Grow with <em>intention.</em></h1>
-      <p class="lead">Coaching for senior leaders navigating complexity, transformation, and the roles that stretch them most.</p>
+      <p class="lead">Coaching for leaders with commercial and transformation responsibility, navigating complexity and expanding leadership demands.</p>
       <div class="hero-ctas">
         <a href="/contact" class="btn-primary">Book a Conversation</a>
-        <a href="/approach" class="btn-ghost">How I Work</a>
+        <a href="/my-approach" class="btn-ghost">How I Work</a>
       </div>
     </div>
     <div class="hero-visual reveal">
@@ -127,10 +134,11 @@
       </div>
     </div>
   </div>
+  <div class="wrap"><a href="#more" class="scroll-cue reveal" aria-label="Scroll down for more"><span>Scroll</span><svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a></div>
 </section>
 
 <!-- FOUR PILLARS -->
-<div class="pillars">
+<div class="pillars" id="more">
   <div class="wrap pillar-grid">
     <div class="pillar reveal">
       <div class="pic"><svg viewBox="0 0 24 24"><path d="M12 2v20M5 9l7-5 7 5"/><path d="M5 9v7a7 7 0 0 0 14 0V9"/></svg></div>
@@ -168,7 +176,7 @@
         <span>Self-awareness</span><span>Relational skill</span><span>Resilience under pressure</span>
         <span>Commercially grounded</span>
       </div>
-      <p style="margin-top:30px"><a href="/approach" class="btn-primary" style="background:#fff;color:var(--accent-deep)">Explore the approach</a></p>
+      <p style="margin-top:30px"><a href="/why-coaching" class="btn-primary" style="background:#fff;color:var(--accent-deep)">Explore the approach</a></p>
     </div>
   </div>
 </section>
@@ -265,6 +273,45 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="tmonials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>What clients say</h2>
+      <p>A few words from leaders Eavann has coached.</p>
+    </div>
+    <div class="tmonial-grid">
+      <figure class="tcard reveal">
+        <div class="quotemark" aria-hidden="true">&ldquo;</div>
+        <p>Eavann possesses a natural empathy and understanding within her coaching style, and this has allowed me to have a focused approach to my management style, both sharpening my decision making and increasing confidence. I highly recommend working with Eavann as your executive coach.</p>
+        <figcaption class="who">Tim</figcaption>
+      </figure>
+      <figure class="tcard reveal">
+        <div class="quotemark" aria-hidden="true">&ldquo;</div>
+        <p>Eavann worked with me during a period when I was contemplating the next step in my career. She really helped me think about what was important in life and understand what I actually wanted in my next role. Her own experience was key to how she coached me, and I really valued her perspective and approach.</p>
+        <figcaption class="who">Senior leader <span>career transition</span></figcaption>
+      </figure>
+      <figure class="tcard reveal">
+        <div class="quotemark" aria-hidden="true">&ldquo;</div>
+        <p>A great listener who provides fresh perspectives on the issues being discussed. Very easy to work with and very supportive of my development. I found the work with her hugely helpful for my life.</p>
+        <figcaption class="who">Claire Casey <span>CDI</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "@id":"https://thegrowthpractice.ie/#business",
+  "name":"The Growth Practice",
+  "review":[
+    {"@type":"Review","author":{"@type":"Person","name":"Tim"},"reviewBody":"Eavann possesses a natural empathy and understanding within her coaching style, which has allowed me to have a focused approach to my management style, sharpening my decision making and increasing confidence. I highly recommend working with Eavann as your executive coach."},
+    {"@type":"Review","author":{"@type":"Person","name":"Claire Casey"},"reviewBody":"A great listener who provides fresh perspectives on the issues being discussed. Very easy to work with and very supportive of my development. I found the work with her hugely helpful."}
+  ]
+}
+</script>
+
 <!-- CTA / CONTACT -->
 <section class="cta-band">
   <div class="wrap">
@@ -282,7 +329,8 @@
       <div class="foot-cols">
         <div class="foot-col">
           <h5>Explore</h5>
-          <a href="/approach">Approach</a>
+          <a href="/why-coaching">Why coaching?</a>
+          <a href="/my-approach">My approach</a>
           <a href="/services">Services</a>
           <a href="/about">About</a>
           <a href="/contact">Contact</a>

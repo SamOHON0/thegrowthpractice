@@ -51,7 +51,9 @@ header.scrolled{border-color:var(--line)}
 /* dropdown */
 .has-drop{position:relative}
 .has-drop>a::after{content:"";display:inline-block;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-left:7px;vertical-align:middle;opacity:.7}
-.drop{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);background:var(--white);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 24px 50px rgba(22,63,57,.13);padding:10px;min-width:300px;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s}
+/* invisible hover bridge across the gap so the menu doesn't close mid-move */
+.has-drop::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);width:240px;max-width:90vw;height:18px}
+.drop{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(8px);background:var(--white);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 24px 50px rgba(22,63,57,.13);padding:10px;min-width:300px;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;z-index:60}
 .has-drop:hover .drop,.has-drop:focus-within .drop{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 .drop a{display:block;padding:11px 14px;border-radius:10px;font-size:.9rem;color:var(--ink);font-weight:500;transition:background .15s,color .15s}
 .drop a span{display:block;font-size:.78rem;color:var(--ink-soft);font-weight:400;margin-top:2px}

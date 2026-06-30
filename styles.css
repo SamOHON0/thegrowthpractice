@@ -101,7 +101,7 @@ header.scrolled{border-color:var(--line)}
 .pillar:last-child{border-right:none}
 .pillar .pic{width:46px;height:46px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
 .pillar .pic svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.7}
-.pillar h3{font-size:1.12rem;margin-bottom:8px;line-height:1.2}
+.pillar h2{font-size:1.12rem;margin-bottom:8px;line-height:1.2}
 .pillar p{font-size:.92rem;color:var(--ink-soft)}
 
 /* CREDIBILITY STRIP */
@@ -189,7 +189,7 @@ section{padding:96px 0}
 .qual:nth-child(2n){border-right:none}
 .qual .ic{width:38px;height:38px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;flex:none}
 .qual .ic svg{width:19px;height:19px;stroke:var(--accent);fill:none;stroke-width:1.7}
-.qual h4{font-size:1.02rem;margin-bottom:3px;line-height:1.25}
+.qual h3{font-size:1.02rem;margin-bottom:3px;line-height:1.25}
 .qual p{font-size:.88rem;color:var(--ink-soft)}
 
 /* WHO / AUDIENCE */
@@ -197,7 +197,7 @@ section{padding:96px 0}
 .reach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--white)}
 .reach-cell{padding:38px 32px;border-right:1px solid var(--line)}
 .reach-cell:last-child{border-right:none}
-.reach-cell h4{font-size:1.18rem;margin-bottom:10px}
+.reach-cell h3{font-size:1.18rem;margin-bottom:10px}
 .reach-cell p{font-size:.96rem;color:var(--ink-soft)}
 .reach-cell .tag{font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:600;margin-bottom:14px;display:block}
 
@@ -205,7 +205,7 @@ section{padding:96px 0}
 .book-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 .book-card{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:36px 32px;display:flex;flex-direction:column}
 .book-card .tag{font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:600;margin-bottom:14px;display:block}
-.book-card h3{font-size:1.45rem;margin-bottom:10px}
+.book-card h2{font-size:1.45rem;margin-bottom:10px}
 .book-card .dur{font-family:'Outfit';color:var(--accent);font-weight:600;margin-bottom:14px}
 .book-card p{color:var(--ink-soft);font-size:1rem;margin-bottom:24px}
 .book-card .btn-primary{margin-top:auto;text-align:center}
@@ -244,13 +244,14 @@ footer{background:var(--ink);color:#9aa3af;padding:54px 0 30px}
 .foot-brand{font-family:'Outfit';font-weight:600;font-size:1.25rem;color:#fff;display:flex;align-items:center;gap:10px}
 .foot-brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent)}
 .foot-cols{display:flex;gap:54px;flex-wrap:wrap}
-.foot-col h5{font-family:'Outfit';font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:#cbd2da;margin-bottom:14px;font-weight:600}
+.foot-col .foot-h{font-family:'Outfit';font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:#cbd2da;margin-bottom:14px;font-weight:600}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .foot-col a{display:block;font-size:.9rem;margin-bottom:9px;transition:color .2s}
 .foot-col a:hover{color:#fff}
 .foot-links{display:flex;gap:28px;flex-wrap:wrap}
 .foot-links a{font-size:.92rem;transition:color .2s}
 .foot-links a:hover{color:#fff}
-.foot-legal{margin-top:24px;font-size:.8rem;line-height:1.7;color:#6b7280}
+.foot-legal{margin-top:24px;font-size:.8rem;line-height:1.7;color:#9098a6}
 
 /* WHATSAPP FLOAT */
 .wa-float{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.22);z-index:60;transition:transform .2s}

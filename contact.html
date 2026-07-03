@@ -27,6 +27,10 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" /></noscript>
 <link rel="stylesheet" href="/styles.css" />
 
+<!-- Calendly popup widget -->
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -110,16 +114,14 @@
         <h2>Introductory consultation</h2>
         <div class="dur">30 minutes · free</div>
         <p>A short, confidential conversation to understand the moment you or your team are facing and explore whether coaching is the right fit.</p>
-        <!-- TODO: replace the href below with your Calendly 30-min consultation link, e.g. https://calendly.com/eavann/30min -->
-        <a href="https://calendly.com/" class="btn-primary" data-calendly="30-min-consultation">Book a 30-min consultation</a>
+        <a href="https://calendly.com/eavann-thegrowthpractice/introductory-consultation" class="btn-primary" data-calendly="30-min-consultation" onclick="if(window.Calendly){Calendly.initPopupWidget({url:'https://calendly.com/eavann-thegrowthpractice/introductory-consultation'});return false;}">Book a 30-min consultation</a>
       </div>
       <div class="book-card reveal">
         <span class="tag">For clients &amp; referrals</span>
         <h2>Coaching call</h2>
         <div class="dur">60 minutes</div>
         <p>A full coaching session for new and existing clients ready to work on a live leadership challenge in depth.</p>
-        <!-- TODO: replace the href below with your Calendly 60-min coaching call link, e.g. https://calendly.com/eavann/60min -->
-        <a href="https://calendly.com/" class="btn-primary" data-calendly="60-min-coaching-call">Book a 60-min coaching call</a>
+        <a href="https://calendly.com/eavann-thegrowthpractice/coaching-call" class="btn-primary" data-calendly="60-min-coaching-call" onclick="if(window.Calendly){Calendly.initPopupWidget({url:'https://calendly.com/eavann-thegrowthpractice/coaching-call'});return false;}">Book a 60-min coaching call</a>
       </div>
     </div>
 
